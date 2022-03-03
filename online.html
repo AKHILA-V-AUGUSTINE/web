@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+var i=0;
+function exam()
+{if(document.f1.n1[0].checked)
+i=i+1;
+if(document.f1.n2[0].checked)
+i=i+1;
+alert("your score is"+i+"/2");
+}
+
+</script>
+</head>
+
+<body>
+<form name="f1">
+<h1>spelling of 2</h1>
+<input type="radio" id="numbr" name="n1" value="two">
+<label for="choice-two">two</label>
+<input type="radio" id="numbr" name="n1" value="tow">
+<label for="choice-tow">tow</label>
+<h1>which is odd number</h1>
+<input type="radio" id="numbr1" name="n2" value="1">
+<label for="choice-1">1</label>
+<input type="radio" id="numbr1" name="n2" value="2">
+<label for="choice-2">2</label>
+ <input type="submit" value="Submit" onclick="exam(this)">
+</form>
+</body>
+</html>

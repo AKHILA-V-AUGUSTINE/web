@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+   
+    <title>Image</title>
+<style>
+   #heading1,#heading2{
+            text-align: center;
+            display:block;
+        }
+        #heading2{
+            display: none;
+}
+</style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="content" id="content">
+            <img src="10.jpg" width="20%" height="20%" id="image"><br><br>
+            <div class="data">
+                <h1 id="heading1">Hover mouse here.....</h1>
+               <h1 id="heading2">hellooo</h1>
+            </div>
+        </div>
+    </div>
+<script>
+    document.getElementById("content").addEventListener("mouseover",change1);
+    document.getElementById("content").addEventListener("mouseout",change2);
+    function change1(){
+        document.getElementById('image').src = "squirrel-screensaver.jpg";
+        document.getElementById('heading1').style.display="none";
+        document.getElementById('heading2').style.display="block"
+    }
+    function change2(){
+        document.getElementById('image').src = "f1.jpg";
+        document.getElementById('heading1').style.display="block";
+        document.getElementById('heading2').style.display="none";
+    }
+</script>
+</body>
+</html>
